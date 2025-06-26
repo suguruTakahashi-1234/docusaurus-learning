@@ -1,7 +1,7 @@
 name: Deploy to GitHub Pages
 
 on:
-  # 手動のみ
+  # 今は手動のみ
   # push:
   #   branches:
   #     - main
