@@ -111,7 +111,9 @@
       "Bash(npm run start:*)",
       "Bash(bun update:*)",
       "Bash(bun:*)",
-      "WebFetch(domain:docusaurus.io)"
+      "WebFetch(domain:docusaurus.io)",
+      "Bash(vercel link:*)",
+      "WebFetch(domain:vercel.com)"
     ],
     "deny": []
   }

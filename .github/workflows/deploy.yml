@@ -1,9 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
+  # 手動のみ
+  # push:
+  #   branches:
+  #     - main
   # 手動実行も可能にする
   workflow_dispatch:
 
