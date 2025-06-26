@@ -17,3 +17,18 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Tutorial tag description
+
+structure:
+  label: Structure
+  permalink: /structure
+  description: Structure tag description
+
+maintenance:
+  label: Maintenance
+  permalink: /maintenance
+  description: Maintenance tag description

@@ -157,5 +157,6 @@ PORT=3001 bun run start
 ## 次のステップ
 
 - [マークダウン拡張機能](/docs/markdown-features)を学ぶ
-- [カスタムコンポーネント](/docs/custom-components)の作成
-- [テーマのカスタマイズ](/docs/theming)
+<!-- TODO: 以下のドキュメントは今後作成予定 -->
+<!-- - [カスタムコンポーネント](/docs/custom-components)の作成 -->
+<!-- - [テーマのカスタマイズ](/docs/theming) -->

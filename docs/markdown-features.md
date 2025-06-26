@@ -241,7 +241,8 @@ hide_table_of_contents: false
 
 ## ファイルのダウンロード
 
-[サンプルファイルをダウンロード](/files/sample.pdf)
+<!-- TODO: サンプルファイルを追加後、以下のリンクを有効化 -->
+<!-- [サンプルファイルをダウンロード](/files/sample.pdf) -->
 
 ## まとめ
 

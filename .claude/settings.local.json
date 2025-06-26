@@ -106,7 +106,11 @@
       "Bash(true)",
       "Bash(rmdir:*)",
       "Bash(find:*)",
-      "Bash(bun add:*)"
+      "Bash(bun add:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run start:*)",
+      "Bash(bun update:*)",
+      "Bash(bun:*)"
     ],
     "deny": []
   }

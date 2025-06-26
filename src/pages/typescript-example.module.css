@@ -1,0 +1,47 @@
+.main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.taskList {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  list-style: none;
+}
+
+.task:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+.task.completed {
+  opacity: 0.6;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+}
+
+.benefits {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--ifm-color-success-contrast-background);
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-success-dark);
+}
+
+.benefits ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}

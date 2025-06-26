@@ -1,0 +1,16 @@
+{
+  "name": "ドキュメント管理システム",
+  "short_name": "ドキュメント",
+  "theme_color": "#25c2a0",
+  "background_color": "#25c2a0",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "img/docusaurus.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,3 +1,11 @@
+suguru:
+  name: Suguru Takahashi
+  title: Developer
+  url: https://github.com/sugurutakahashi
+  image_url: https://github.com/sugurutakahashi.png
+  socials:
+    github: sugurutakahashi
+
 yangshun:
   name: Yangshun Tay
   title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
