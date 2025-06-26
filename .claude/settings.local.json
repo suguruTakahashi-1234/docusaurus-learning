@@ -110,7 +110,8 @@
       "Bash(npm install:*)",
       "Bash(npm run start:*)",
       "Bash(bun update:*)",
-      "Bash(bun:*)"
+      "Bash(bun:*)",
+      "WebFetch(domain:docusaurus.io)"
     ],
     "deny": []
   }
