@@ -1,8 +1,12 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import { getDeployConfig } from './deploy-configs';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+// デプロイ環境に応じた設定を取得
+const deployConfig = getDeployConfig();
 
 const config: Config = {
   title: 'ドキュメント管理システム',
@@ -15,10 +19,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://sugurutakahashi.github.io',
+  url: deployConfig.url,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docusaurus-learning/',
+  baseUrl: deployConfig.baseUrl,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

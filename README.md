@@ -76,21 +76,67 @@ bun run build
 
 ## デプロイ
 
-### GitHub Pages へのデプロイ
+このプロジェクトは複数のプラットフォームへのデプロイに対応しています。
+
+### 対応プラットフォーム
+
+#### 1. GitHub Pages
+- **URL**: https://sugurutakahashi.github.io/docusaurus-learning/
+- **環境変数**: `DEPLOY_ENV=github-pages` または自動検出（`GITHUB_ACTIONS=true`）
+- **デプロイ方法**: GitHub Actions
 
 Using SSH:
-
 ```bash
 USE_SSH=true bun run deploy
 ```
 
 Not using SSH:
-
 ```bash
 GIT_USER=<Your GitHub username> bun run deploy
 ```
 
-GitHub Pages を使用してホスティングする場合、このコマンドでウェブサイトをビルドし、`gh-pages` ブランチにプッシュできます。
+#### 2. Vercel
+- **URL**: https://docusaurus-learning.vercel.app
+- **環境変数**: `DEPLOY_ENV=vercel` または自動検出（`VERCEL=1`）
+- **デプロイ方法**: GitHubリポジトリ連携で自動デプロイ
+
+#### 3. Netlify
+- **URL**: https://docusaurus-learning.netlify.app
+- **環境変数**: `DEPLOY_ENV=netlify` または自動検出（`NETLIFY=true`）
+- **デプロイ方法**: GitHubリポジトリ連携で自動デプロイ
+
+#### 4. Cloudflare Pages
+- **URL**: https://docusaurus-learning.pages.dev
+- **環境変数**: `DEPLOY_ENV=cloudflare` または自動検出（`CF_PAGES=1`）
+- **デプロイ方法**: GitHubリポジトリ連携で自動デプロイ
+
+### デプロイ設定の仕組み
+
+1. `deploy-configs.ts` に各環境の設定を定義
+2. `docusaurus.config.ts` が環境を自動判定して適切な設定を適用
+3. 環境変数 `DEPLOY_ENV` で明示的に環境を指定することも可能
+
+### ローカルでのテスト
+
+特定の環境の設定でビルドをテストする場合：
+
+```bash
+# GitHub Pages用の設定でビルド
+DEPLOY_ENV=github-pages bun run build
+
+# Vercel用の設定でビルド
+DEPLOY_ENV=vercel bun run build
+
+# Netlify用の設定でビルド
+DEPLOY_ENV=netlify bun run build
+
+# Cloudflare Pages用の設定でビルド
+DEPLOY_ENV=cloudflare bun run build
+```
+
+### 新しい環境の追加
+
+新しいデプロイ先を追加する場合は、`deploy-configs.ts` の `deployConfigs` オブジェクトに設定を追加してください。
 
 ## プロジェクト構造と各ディレクトリの詳細
 
